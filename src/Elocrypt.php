@@ -231,8 +231,8 @@ trait Elocrypt
      *
      * @return array
      */
-    public function getAttributes()
+    public function getAttributes($keys = [])
     {
-        return $this->doDecryptAttributes(parent::getAttributes());
+        return $this->doDecryptAttributes(parent::getAttributes($keys));
     }
 }
